@@ -21,7 +21,7 @@ export function Cat({image, text, error, isLoading}) {
                     <img className="rounded-3xl max-w-lg" src={image}></img>
                     <p>{text}</p>
                 </>
-                : <h3 className="font-medium">For Start, generate a first Cat</h3>
+                : <h3 className="font-medium">For Start, generate a Cat</h3>
             }
         </section>
     )

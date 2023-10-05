@@ -26,10 +26,6 @@ export function useCat () {
     }, [fact])
 
     useEffect(() => {
-        getFact()
-    }, [])
-
-    useEffect(() => {
         getImage()
     }, [fact])
 
