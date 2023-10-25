@@ -1,5 +1,0 @@
-export * from './Button'
-export * from './Header'
-export * from './Counter'
-export * from './Footer'
-export * from './Main'
