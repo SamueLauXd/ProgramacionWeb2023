@@ -15,7 +15,8 @@ export default {
       },
       "dark-blue": "#080E21",
       "gray-blue": "#12182A",
-      "green": "#B1E55C"
+      "green": "#B1E55C",
+      "gray-white": "#1f2738"
     },
     fontFamily: {
       'raleway': ['Raleway', 'sans-serif'],
