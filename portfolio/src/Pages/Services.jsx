@@ -24,20 +24,19 @@ export function Services() {
                     <li className="text-white font-raleway font-medium text-lg cursor-pointer hover:text-aquamarine-100 transition-colors">Brand design & strategy</li>
                 </ul>
 
-                <section className="flex flex-col items-center">
-                    <article className="grid grid-cols-2 w-4/5 bg-gray-white rounded-xl">
-                        <div className="relative w-full">
-                            <h2 className="absolute font-raleway w-1/2 text-aquamarine-100 text-2xl font-bold">Web Design & Development</h2>
-                            <img src="./src/assets/images/services-img-1.webp" className="w-2/3" alt="Web design and development image" />
-                        </div>
-                        <div className="flex flex-col justify-center gap-12">
-                            <ul className="flex flex-col gap-4 w-5/6">
-                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-1/2">Responsive Web Design</li>
-                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-1/2">Web Development</li>
-                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-1/2">UI / UX Design</li>
-                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-1/2">Custom Web Design</li>
-                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-1/2">Website Maintenance</li>
-                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-1/2">Corporate Web Design</li>
+                <section className="flex flex-row items-center justify-center">
+                    <article className="flex flex-row bg-gray-white rounded-xl gap-36 w-[70%] relative">
+                        <img src="./src/assets/icons/web-dev-icon.svg" alt="Web & Dev icon" className="absolute -left-[8%] -top-[8%]" />
+                        <h2 className="absolute left-[12%] top-[10%] font-raleway w-1/3 text-aquamarine-100 text-2xl font-bold ">Web Design & <br /> Development</h2>
+                        <img src="./src/assets/images/services-img-1.webp" loading="lazy" className="w-2/5 object-cover" alt="Web design and development image" />
+                        <div className="flex flex-col justify-center gap-12 w-full">
+                            <ul className="flex flex-col gap-4 w-full">
+                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">Responsive Web Design</li>
+                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">Web Development</li>
+                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">UI / UX Design</li>
+                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">Custom Web Design</li>
+                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">Website Maintenance</li>
+                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">Corporate Web Design</li>
                             </ul>
                             <button className="font-lato text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium">Learn more</button>
                         </div>
@@ -47,8 +46,8 @@ export function Services() {
                 <section className="my-36">
                     <h3 className="font-raleway text-white font-bold text-6xl flex flex-col items-center gap-14">
                         <div className="flex flex-col">
-                        <span>Have an idea?</span>
-                        <span className="text-aquamarine-100">Let’s bring it to life</span>
+                            <span>Have an idea?</span>
+                            <span className="text-aquamarine-100">Let’s bring it to life</span>
                         </div>
                         <button className="font-lato text-base text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium">Learn more</button>
                     </h3>
