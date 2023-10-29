@@ -3,7 +3,7 @@ import { Footer } from "../Components/Footer"
 import { useEffect } from "react"
 
 export function Services() {
-
+    console.log('Shamy');
     useEffect((() => {
         window.scrollTo(0, 0)
     }), [])
