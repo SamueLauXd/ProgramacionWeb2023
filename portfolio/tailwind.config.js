@@ -23,7 +23,8 @@ export default {
       'lato': ['Lato', 'sans-serif']
     },
     backgroundImage: {
-      'services-banner': "url(./src/assets/images/bg-services-1.webp)"
+      'services-banner': "url(./src/assets/images/bg-services-1.webp)",
+      'landing-banner' : "url(./src/assets/images/landing-banner.webp)"
     }
   },
   plugins: [],

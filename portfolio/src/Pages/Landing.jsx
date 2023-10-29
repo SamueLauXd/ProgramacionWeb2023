@@ -1,7 +1,9 @@
 import { Nav } from "../Components/Nav"
 import { Footer } from "../Components/Footer"
 import { ServiceCard } from "../Components/ServiceCard"
+import { ProjectCard } from "../Components/ProjectCard"
 import { Link } from "react-router-dom"
+import { MemberCard } from "../Components/MemberCard"
 
 
 export function Landing () {
@@ -17,7 +19,7 @@ export function Landing () {
                     </section>
                 </div>
 
-                <section className="flex items-end gap-40 text-white">
+                <section className="flex items-center gap-40 text-white">
                     <img className="mt-36" loading="lazy" src="./src/assets/icons/landing-bg.svg"/>
                     <div className="flex flex-col gap-16">
                         <p className="text-lg text-aquamarine-200">About Us</p>
@@ -38,7 +40,7 @@ export function Landing () {
                     <p className="text-lg font-lato font-light text-white">Unique experiences that physically and emotionally engage the general public.</p>
                 </section>
 
-                <section className="flex justify-center gap-16 mt-28">
+                <section className="flex justify-center gap-16 mt-28 flex-wrap">
                     <ServiceCard icon={<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-vector-bezier" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M3 14m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
@@ -78,8 +80,58 @@ export function Landing () {
                 <section className="w-full flex justify-end mt-32">
                     <div className="flex flex-col items-end gap-4">
                         <p className="font-lato text-white text-light">PROJECTS</p>
-                        <h1 className="font-raleway font-bold text-white text-3xl">Our <span className="text-aquamarine-100">Projects</span></h1>
+                        <h1 className="font-raleway font-bold text-white text-5xl">Our <span className="text-aquamarine-100">Projects</span></h1>
                     </div>
+                </section>
+
+                <section className="mt-20">
+                    <ProjectCard title='Dunkin’ OOH Experience' subtitle='Design and prototyping of an interactive OOH (Out of Home) experience'
+                        img="./src/assets/images/dunkin-project.webp"
+                    />
+                    <ProjectCard title='Icesi University' subtitle='UX Research - UI Design - Design of Experiment'
+                        img="./src/assets/images/BU-project.webp"
+                    />
+                    <ProjectCard title='Hospital Padrino ' subtitle='UI/UX Project'
+                        img="./src/assets/images/hp-project.webp"
+                    />
+                </section>
+
+                <section>
+                    <img className="w-11/12" src="./src/assets/images/jum.webp" alt="" />
+                </section>
+
+                <section className="flex flex-col flex-wrap gap-12 mt-24">
+                    <MemberCard name="Alejandro Solarte" 
+                    subtitle="Developer" text="Passionate developer who likes to always keep learning about the new technologies."
+                    img="./src/assets/images/alejo.webp"
+                    /> 
+
+                    <div className="flex justify-between">
+                        <div className="w-4/12 flex flex-col justify-center">
+                            <p className="font-raleway text-aquamarine-100">MEET OUR TEAM</p>
+                            <h2 className="font-raleway font-medim text-4xl text-white"><span className="text-aquamarine-100">GREAT</span> PEOPLE BEHIND UXPERIENCE</h2>
+                        </div>
+
+                        <MemberCard name="Samuel Ortiz" 
+                        subtitle="Developer - UI Designer" text="Developer who likes to always keep learning about the new technologies."
+                        img="./src/assets/images/samu.webp"
+                        /> 
+                    </div>
+
+                    <MemberCard name="Isabela Cortes" 
+                    subtitle="UI Designer" text="Great marketer and Designer who puts 100% in all her work."
+                    img="./src/assets/images/isa.webp"
+                    /> 
+                </section>
+
+                <section className="bg-landing-banner text-white px-10 py-44 flex flex-col gap-10 mt-32 rounded-3xl">
+                    <div className="flex flex-col gap-4">
+                        <h1 className="font-raleway text-4xl">Do you have any <span className="text-aquamarine-100">questions</span>?</h1>
+                        <p>Feel free to send us your questions or request a free consultation.</p>
+                    </div>
+                    <Link to="/contact">
+                        <button className="bg-green text-dark-blue rounded-full px-4 py-2 hover:bg-aquamarine-100 transition-all duration-200">Contact Us</button>
+                    </Link>
                 </section>
             </main>
             <Footer/>
