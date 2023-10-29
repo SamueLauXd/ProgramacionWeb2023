@@ -27,6 +27,9 @@ export function Footer () {
                     <li>123-456-789</li>
                     <li>@uxperience</li>
                     <li>uxperience@outlook.com</li>
+                    <li>
+                        <Link to='/login'>Administrator Panel</Link>
+                    </li>
                 </ul>
             </section>
             <section className="flex flex-col gap-2">

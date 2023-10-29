@@ -1,7 +1,9 @@
 export const services = [
     {
-        id: 1,
+        id: 'web-option',
         service: 'Web Design & Development',
+        inputLabel: 'Web Design', 
+        value: 'web-design',
         includes: [
             'Responsive Web Design',
             'Web Development',
@@ -12,8 +14,10 @@ export const services = [
         ]
     },
     {
-        id: 2,
+        id: 'ui-ux-option',
         service: 'UI / UX Design',
+        inputLabel: 'UI/UX Design',
+        value: 'ui-ux',
         includes: [
             'Design Audit',
             'Interactive Design Prototyping',
@@ -24,8 +28,10 @@ export const services = [
         ]
     },
     {
-        id: 3,
+        id: 'brand-option',
         service: 'Brand design and strategy',
+        inputLabel: 'Brand and Marketing',
+        value: 'brand-marketing',
         includes: [
             'Responsive Web Design',
             'Web Development',
