@@ -5,7 +5,6 @@ import { servicesNav } from "../const/servicesNav";
 import { services } from "../const/services";
 
 export function Services() {
-
     useEffect((() => {
         window.scrollTo(0, 0)
     }), [])
