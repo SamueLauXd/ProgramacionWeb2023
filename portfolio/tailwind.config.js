@@ -9,6 +9,7 @@ export default {
     },
     colors: {
       "white": "#FFFFFF",
+      "black": "#000000",
       "aquamarine": {
         100: "#73EAF1",
         200: "#5EBCC1"
