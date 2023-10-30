@@ -4,6 +4,8 @@ import { ServiceCard } from "../Components/ServiceCard"
 import { ProjectCard } from "../Components/ProjectCard"
 import { Link } from "react-router-dom"
 import { MemberCard } from "../Components/MemberCard"
+import { Button } from "../Components/Button"
+import { SecondaryButton } from "../Components/SecondaryButton"
 
 
 export function Landing () {
@@ -16,6 +18,9 @@ export function Landing () {
                     <section className="flex flex-col rounded-2xl px-14 py-9 w-8/12 gap-10 backdrop-blur-md border border-solid border-white border-opacity-10">
                         <p className="text-aquamarine-100 text-x font-raleway">UXPERIENCE</p>
                         <h1 className="font-medium font-raleway text-white text-5xl">TRANSFORMING IDEAS INTO <span className="text-aquamarine-100">UNIQUE EXPERIENCES</span></h1>
+                        <Link to="/contact">
+                            <Button>Get Started</Button>
+                        </Link>
                     </section>
                 </div>
 
@@ -30,7 +35,7 @@ export function Landing () {
                             solutions that captivate users and deliver tangible results for our clients.
                         </p>
                         <Link to='/about'>
-                            <button className="bg-green text-dark-blue rounded-full px-4 py-2 hover:bg-aquamarine-100 transition-all duration-200">Learn more about us</button>
+                            <SecondaryButton>Learn more about us</SecondaryButton>
                         </Link>
                     </div>
                 </section>
@@ -84,20 +89,16 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section className="mt-20">
-                    <ProjectCard title='Dunkin’ OOH Experience' subtitle='Design and prototyping of an interactive OOH (Out of Home) experience'
-                        img="./src/assets/images/dunkin-project.webp"
-                    />
-                    <ProjectCard title='Icesi University' subtitle='UX Research - UI Design - Design of Experiment'
-                        img="./src/assets/images/BU-project.webp"
-                    />
-                    <ProjectCard title='Hospital Padrino ' subtitle='UI/UX Project'
-                        img="./src/assets/images/hp-project.webp"
-                    />
+                <section className="flex flex-wrap gap-10 mt-20 items-center">
+                    <ProjectCard/>
+                    <div className="rounded-xl flex flex-col items-start gap-2 justify-center h-min p-20">
+                        <h1 className="font-raleway font-medium text-white text-3xl">More to come</h1>
+                        <SecondaryButton>See all</SecondaryButton>
+                    </div>
                 </section>
 
                 <section>
-                    <img className="w-11/12" src="./src/assets/images/jum.webp" alt="" />
+                    <img className="w-11/12 mt-32" src="./src/assets/images/jum.webp" alt="" />
                 </section>
 
                 <section className="flex flex-col flex-wrap gap-12 mt-24">
@@ -124,13 +125,30 @@ export function Landing () {
                     /> 
                 </section>
 
+                <section className="mt-32 flex flex-col items-center gap-20">
+                    <div className="text-white">
+                        <p className="font-lato">TESTIMONIALS</p>
+                        <h2 className="font-raleway font-bold text-4xl">What out clients say <span className="text-aquamarine-100">about us</span></h2>
+                    </div>
+                    <div className="w-6/12 flex flex-col gap-9 bg-aquamarine-200 text-black p-14 rounded-xl relative">
+                        <img className="absolute -left-16 -top-16 w-32" src="./src/assets/images/profile.webp" alt="" />
+                        <p>
+                            “My experience working with the UXperience agency has been truly exceptional. From initial design through development and implementation, the UXperience team demonstrated a consistent commitment to excellence and innovation."
+                        </p>
+                        <div className="text-[#5E6282]">
+                            <h4 className="font-lato font-medium text-xl">Mike Taylor</h4>
+                            <p>Logistic manager of Dunkin’</p>
+                        </div>
+                    </div>
+                </section>
+
                 <section className="bg-landing-banner text-white px-10 py-44 flex flex-col gap-10 mt-32 rounded-3xl">
                     <div className="flex flex-col gap-4">
                         <h1 className="font-raleway text-4xl">Do you have any <span className="text-aquamarine-100">questions</span>?</h1>
                         <p>Feel free to send us your questions or request a free consultation.</p>
                     </div>
                     <Link to="/contact">
-                        <button className="bg-green text-dark-blue rounded-full px-4 py-2 hover:bg-aquamarine-100 transition-all duration-200">Contact Us</button>
+                        <Button>Contact Us</Button>
                     </Link>
                 </section>
             </main>

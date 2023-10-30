@@ -1,15 +1,26 @@
-export function ProjectCard({ title, subtitle, img }) {
+import { SecondaryButton } from "./SecondaryButton";
+import { landingProjects } from "../const/landingProjects";
 
-    const background = `flex flex-col justify-end rounded-xl bg-[url(${img})] h-[525px]`;
+export function ProjectCard() {
+
     return (
-        <div className={background}>
-            <div className="flex items-center justify-between bg-dark-blue bg-opacity-70 text-white px-10 py-6" loading="lazy">
-                <div>
-                    <h2 className="font-raleway font-bold text-4xl">{title}</h2>
-                    <p className="font-lato text-lg">{subtitle}</p>
-                </div>
-                <button className="bg-green text-dark-blue rounded-full px-4 py-2 hover:bg-aquamarine-100 transition-all duration-200">See more</button>
-            </div>
-        </div>
+        <>
+            {
+                landingProjects.map(({title, text, img}) => {
+                    const background = `flex flex-col justify-end rounded-xl w-[613px] h-[476px] ${img}`;
+                    return (
+                        <div className={background}>
+                            <div className="mt-60 flex items-center justify-between bg-dark-blue bg-opacity-70 text-white px-10 py-6" loading="lazy">
+                                <div>
+                                    <h2 className="font-raleway font-bold text-2xl">{title}</h2>
+                                    <p className="font-lato text-sm w-96">{text}</p>
+                                </div>
+                                <SecondaryButton>See more</SecondaryButton>
+                            </div>
+                        </div>
+                    )
+                })
+            }
+        </>
     )
 }

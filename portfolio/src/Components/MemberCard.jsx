@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { SecondaryButton } from "./SecondaryButton";
 export function MemberCard ({name, subtitle, text, img}) {
     return (
         <div className="flex justify-end  w-6/12 relative px-4 py-5 rounded-3xl bg-[#1E2636] text-white">
@@ -18,7 +18,7 @@ export function MemberCard ({name, subtitle, text, img}) {
                 </nav>
                 <div>
                     <Link to="/member">
-                    <button className="bg-green text-dark-blue rounded-full px-4 py-2 hover:bg-aquamarine-100 transition-all duration-200">More about me</button>
+                        <SecondaryButton>More about me</SecondaryButton>
                     </Link>
                 </div>
             </div>

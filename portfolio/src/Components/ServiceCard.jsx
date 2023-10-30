@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import { SecondaryButton } from "./SecondaryButton"
 /* eslint-disable react/prop-types */
 export function ServiceCard ({icon, title, text}) {
     return (
@@ -10,7 +10,7 @@ export function ServiceCard ({icon, title, text}) {
             <h1 className="font-bold font-raleway text-3xl text-aquamarine-100">{title}</h1>
             <p className="font-lato text-white text-lg">{text}</p>
             <Link to='/services'>
-                <button className="bg-green px-4 py-2 rounded-full hover:bg-aquamarine-100 transition-all duration-200">See more</button>
+                <SecondaryButton>See more</SecondaryButton>
             </Link>
         </div>
     )
