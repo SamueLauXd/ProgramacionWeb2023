@@ -24,7 +24,7 @@ export default {
     },
     backgroundImage: {
       'services-banner': "url(./src/assets/images/bg-services-1.webp)",
-      'landing-banner' : "url(./src/assets/images/landing-banner.webp)"
+      'landing-banner' : "url(./src/assets/images/landing-banner.webp)",
     }
   },
   plugins: [],

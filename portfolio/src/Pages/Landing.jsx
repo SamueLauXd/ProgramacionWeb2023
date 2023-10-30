@@ -35,7 +35,7 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section className="flex flex-col items-center gap-8 mt-56">
+                <section className="flex flex-col items-center gap-8 mt-36">
                     <h1 className="font-bold font-raleway text-4xl text-white">We produce and craft <span className="text-aquamarine-100">experiences</span> to live</h1>
                     <p className="text-lg font-lato font-light text-white">Unique experiences that physically and emotionally engage the general public.</p>
                 </section>

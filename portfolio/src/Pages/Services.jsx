@@ -20,14 +20,14 @@ export function Services() {
             </header>
             <main className="py-10 flex flex-col items-center justify-center">
                 <ServicesNav />
-                <ServicesCarousel/>
+                <ServicesCarousel />
                 <section className="my-36">
                     <h3 className="font-raleway text-white font-bold text-6xl flex flex-col items-center gap-14">
                         <div className="flex flex-col">
                             <span>Have an idea?</span>
                             <span className="text-aquamarine-100">Let’s bring it to life</span>
                         </div>
-                        <button className="font-lato text-base text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium">Learn more</button>
+                        <button className="font-lato text-base text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium hover:bg-aquamarine-100 transition-all duration-200">Learn more</button>
                     </h3>
                 </section>
             </main>
@@ -51,32 +51,32 @@ function ServicesNav() {
 }
 
 function ServicesCarousel() {
-    return(
+    return (
         <section className="w-5/6 flex flex-row overflow-x-scroll snap-x snap-mandatory p-20 gap-96">
-                    {
-                        services.map(({ service, includes }) => {
-                            return (
-                                <article className="flex flex-row bg-gray-white rounded-xl gap-32 w-[75%] flex-shrink-0 relative snap-center ">
-                                    <img src="./src/assets/icons/web-dev-icon.svg" alt="Web & Dev icon" className="absolute -left-[8%] -top-[8%]" />
-                                    <h2 className="absolute left-[12%] top-[10%] font-raleway w-1/3 text-aquamarine-100 text-2xl font-bold ">{service}</h2>
-                                    <img src="./src/assets/images/services-img-1.webp" loading="lazy" className="w-2/5 object-cover" alt="Web design and development image" />
-                                    <div className="flex flex-col justify-center gap-12 w-full py-8">
-                                        <ul className="flex flex-col gap-4 w-full">
-                                            {
-                                                includes.map(feature => {
-                                                    return (
-                                                        <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">{feature}</li>
-                                                    )
+            {
+                services.map(({ service, includes }) => {
+                    return (
+                        <article className="flex flex-row bg-gray-white rounded-xl gap-32 w-[75%] flex-shrink-0 relative snap-center ">
+                            <img src="./src/assets/icons/web-dev-icon.svg" alt="Web & Dev icon" className="absolute -left-[8%] -top-[8%]" />
+                            <h2 className="absolute left-[12%] top-[10%] font-raleway w-1/3 text-aquamarine-100 text-2xl font-bold ">{service}</h2>
+                            <img src="./src/assets/images/services-img-1.webp" loading="lazy" className="w-2/5 object-cover" alt="Web design and development image" />
+                            <div className="flex flex-col justify-center gap-12 w-full py-8">
+                                <ul className="flex flex-col gap-4 w-full">
+                                    {
+                                        includes.map(feature => {
+                                            return (
+                                                <li className="font-lato text-white font-light text-xl pb-4 border-b-2 border-aquamarine-200 w-7/12">{feature}</li>
+                                            )
 
-                                                })
-                                            }
-                                        </ul>
-                                        <button className="font-lato text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium">Learn more</button>
-                                    </div>
-                                </article>
-                            )
-                        })
-                    }
-                </section>
+                                        })
+                                    }
+                                </ul>
+                                <button className="font-lato text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium">Learn more</button>
+                            </div>
+                        </article>
+                    )
+                })
+            }
+        </section>
     )
 }

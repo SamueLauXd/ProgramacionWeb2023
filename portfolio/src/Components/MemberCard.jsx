@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function MemberCard ({name, subtitle, text, img}) {
     return (
         <div className="flex justify-end  w-6/12 relative px-4 py-5 rounded-3xl bg-[#1E2636] text-white">
@@ -15,7 +17,9 @@ export function MemberCard ({name, subtitle, text, img}) {
                     <img src="./src/assets/icons/behance.svg" alt="" />
                 </nav>
                 <div>
+                    <Link to="/member">
                     <button className="bg-green text-dark-blue rounded-full px-4 py-2 hover:bg-aquamarine-100 transition-all duration-200">More about me</button>
+                    </Link>
                 </div>
             </div>
         </div>
