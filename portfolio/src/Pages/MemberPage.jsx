@@ -23,16 +23,9 @@ export function MemberPage() {
                     <h3 className="font-raleway font-bold w-3/4 text-white text-3xl border-r"><span className="text-aquamarine-100">My</span> Biography</h3>
                     <p className="font-lato font-light text-white">Passionate developer who likes to always keep learning about the new technologies and more ways to improve his work. Also great UI / UX designer.</p>
                 </section>
-                <section className="my-20">
-                    <ProjectCard title='Dunkin’ OOH Experience' subtitle='Design and prototyping of an interactive OOH (Out of Home) experience'
-                        img="./src/assets/images/dunkin-project.webp"
-                    />
-                    <ProjectCard title='Icesi University' subtitle='UX Research - UI Design - Design of Experiment'
-                        img="./src/assets/images/BU-project.webp"
-                    />
-                    <ProjectCard title='Hospital Padrino ' subtitle='UI/UX Project'
-                        img="./src/assets/images/hp-project.webp"
-                    />
+                <h3 className="font-raleway font-bold w-[95%] text-white text-3xl mt-40 mb-10 text-center"><span className="text-aquamarine-100">My</span> Projects</h3>
+                <section className="mb-20 flex flex-wrap gap-20">
+                    <ProjectCard />
                 </section>
             </main>
             <Footer />

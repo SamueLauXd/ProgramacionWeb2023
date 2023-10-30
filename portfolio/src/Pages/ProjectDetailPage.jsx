@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { Footer, Nav } from "../Components";
 
 export function ProjectDetailPage() {
+    useEffect((() => {
+        window.scrollTo(0,0)
+    }), [])
     return (
         <>
             <Nav />

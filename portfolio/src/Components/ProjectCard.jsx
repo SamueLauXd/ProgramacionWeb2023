@@ -1,5 +1,6 @@
 import { SecondaryButton } from "./SecondaryButton";
 import { landingProjects } from "../const/landingProjects";
+import { Link } from "react-router-dom";
 
 export function ProjectCard() {
 
@@ -15,7 +16,9 @@ export function ProjectCard() {
                                     <h2 className="font-raleway font-bold text-2xl">{title}</h2>
                                     <p className="font-lato text-sm w-96">{text}</p>
                                 </div>
+                                <Link to="/detail">
                                 <SecondaryButton>See more</SecondaryButton>
+                                </Link>
                             </div>
                         </div>
                     )

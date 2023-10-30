@@ -3,6 +3,8 @@ import { Footer } from "../Components/Footer"
 import { useEffect } from "react"
 import { servicesNav } from "../const/servicesNav";
 import { services } from "../const/services";
+import { SecondaryButton } from "../Components";
+
 
 export function Services() {
     useEffect((() => {
@@ -27,7 +29,7 @@ export function Services() {
                             <span>Have an idea?</span>
                             <span className="text-aquamarine-100">Let’s bring it to life</span>
                         </div>
-                        <button className="font-lato text-base text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium hover:bg-aquamarine-100 transition-all duration-200">Learn more</button>
+                        <SecondaryButton>Learn more</SecondaryButton>
                     </h3>
                 </section>
             </main>
@@ -71,7 +73,7 @@ function ServicesCarousel() {
                                         })
                                     }
                                 </ul>
-                                <button className="font-lato text-dark-blue bg-green text-left w-max py-1 px-8 rounded-xl font-medium">Learn more</button>
+                                <SecondaryButton>Learn more</SecondaryButton>
                             </div>
                         </article>
                     )
