@@ -26,9 +26,11 @@ export function Landing () {
 
                 <section className="flex items-center gap-40 text-white">
                     <img className="mt-36" loading="lazy" src="./src/assets/icons/landing-bg.svg"/>
-                    <div className="flex flex-col gap-16">
-                        <p className="text-lg text-aquamarine-200">About Us</p>
-                        <h1 className="font-bold font-raleway text-3xl text-white">We are <span className="text-aquamarine-100">UXperience</span></h1>
+                    <div className="flex flex-col gap-6">
+                        <div>
+                            <p className="text-lg text-aquamarine-200">About Us</p>
+                            <h1 className="font-bold font-raleway text-5xl text-white">We are <span className="text-aquamarine-100">UXperience</span></h1>
+                        </div>
                         <p className="text-lg font-lato border-t border-solid border-white pt-12">
                             We are an innovative design and development consultancy dedicated to transforming ideas
                             into exceptional digital experiences. Our focus is on creating impactful and effective 
@@ -40,12 +42,12 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section className="flex flex-col items-center gap-8 mt-36">
+                <section className="flex flex-col items-center gap-3 mt-36">
                     <h1 className="font-bold font-raleway text-4xl text-white">We produce and craft <span className="text-aquamarine-100">experiences</span> to live</h1>
                     <p className="text-lg font-lato font-light text-white">Unique experiences that physically and emotionally engage the general public.</p>
                 </section>
 
-                <section className="flex justify-center gap-16 mt-28 flex-wrap">
+                <section className="flex justify-center gap-16 mt-20 flex-wrap">
                     <ServiceCard icon={<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-vector-bezier" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M3 14m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />

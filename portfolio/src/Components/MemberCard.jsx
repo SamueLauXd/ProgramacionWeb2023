@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { SecondaryButton } from "./SecondaryButton";
 export function MemberCard ({name, subtitle, text, img}) {
     return (
-        <div className="flex justify-end  w-6/12 relative px-4 py-5 rounded-3xl bg-[#1E2636] text-white">
+        <div className="flex justify-end  w-6/12 relative px-4 py-10 rounded-3xl bg-[#1E2636] text-white">
             <img className="w-[250px] absolute left-2 bottom-0" src={img} alt="" />
-            <div className="flex flex-col gap-9">
+            <div className="flex flex-col gap-6">
                 <div>
                     <h3 className="font-raleway font-bold text-3xl text-aquamarine-100">{name}</h3>
                     <p>{subtitle}</p>
