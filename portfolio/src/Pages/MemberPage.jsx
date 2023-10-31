@@ -24,7 +24,7 @@ export function MemberPage() {
                     <p className="font-lato font-light text-white">Passionate developer who likes to always keep learning about the new technologies and more ways to improve his work. Also great UI / UX designer.</p>
                 </section>
                 <h3 className="font-raleway font-bold w-[95%] text-white text-3xl mt-40 mb-10 text-center"><span className="text-aquamarine-100">My</span> Projects</h3>
-                <section className="mb-20 flex flex-wrap gap-20">
+                <section className="mb-20 flex justify-center flex-wrap gap-20">
                     <ProjectCard />
                 </section>
             </main>
