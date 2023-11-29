@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import { Landing, About, Services, Contact, MemberPage, ProjectDetailPage } from './Pages'
-import { LoginPage } from "./auth/Pages/LoginPage"
+import { Landing, About, Services, Contact, MemberPage, ProjectDetailPage } from './pages'
+import { LoginPage } from "./auth/pages/LoginPage"
 
 function App() {
 
