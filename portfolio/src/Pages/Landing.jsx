@@ -12,19 +12,19 @@ export function Landing () {
     return (
         <>
             <Nav/>
-            <main className="px-20 py-10 mt-20">
-            <img src="./src/assets/images/bg-landing-1.webp" className="absolute top-0 right-0 -z-10"/>
+            <main className="px-20 py-10">
+            <img src="./src/assets/images/bg-landing-1.webp" className="absolute top-0 right-0 -z-10 hidden md:block"/>
                 <div className="h-96">
-                    <section className="flex flex-col rounded-2xl px-14 py-9 w-full gap-10 backdrop-blur-md border border-solid border-white border-opacity-10 lg:w-8/12">
-                        <p className="text-aquamarine-100 text-x font-raleway">UXPERIENCE</p>
-                        <h1 className="font-medium font-raleway text-white text-5xl">TRANSFORMING IDEAS INTO <span className="text-aquamarine-100">UNIQUE EXPERIENCES</span></h1>
+                    <section className="flex flex-col rounded-2xl px-1 md:px-14 py-9 w-full border-none gap-10 backdrop-blur-md border md:border-solid border-white border-opacity-10 lg:w-8/12">
+                        <p className="text-aquamarine-100 font-raleway">UXPERIENCE</p>
+                        <h1 className="font-medium font-raleway text-white text-3xl md:text-5xl">TRANSFORMING IDEAS INTO <span className="text-aquamarine-100">UNIQUE EXPERIENCES</span></h1>
                         <Link to="/contact">
                             <Button>Get Started</Button>
                         </Link>
                     </section>
                 </div>
 
-                <section className="flex items-center gap-40 text-white mt-36">
+                <section className="flex items-center gap-40 text-white mt-10 md:mt-20">
                     <img className="hidden lg:block" loading="lazy" src="./src/assets/icons/landing-bg.svg"/>
                     <div className="flex flex-col gap-6">
                         <div>
@@ -66,15 +66,13 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section className="flex flex-col flex-wrap gap-12 mt-24">
-                    <MemberCard/> 
-
-                    <div className="flex justify-between">
-                        <div className="w-4/12 flex flex-col justify-center">
-                            <p className="font-raleway text-aquamarine-100">MEET OUR TEAM</p>
-                            <h2 className="font-raleway font-medim text-4xl text-white"><span className="text-aquamarine-100">GREAT</span> PEOPLE BEHIND UXPERIENCE</h2>
-                        </div>
+                <section className="flex flex-col gap-12 mt-24">
+                    <div className="flex flex-col justify-center md:justify-start">
+                            <p className="font-raleway text-white text-opacity-40">MEET OUR TEAM</p>
+                            <h2 className="font-raleway font-bold text-4xl text-white"><span className="text-aquamarine-100">Great</span> people behind UXperience</h2>
                     </div>
+
+                    <MemberCard/> 
                 </section>
 
                 <section className="mt-32 flex flex-col items-center gap-20">
@@ -82,8 +80,8 @@ export function Landing () {
                         <p className="font-lato">TESTIMONIALS</p>
                         <h2 className="font-raleway font-bold text-4xl">What our clients say <span className="text-aquamarine-100">about us</span></h2>
                     </div>
-                    <div className="w-6/12 flex flex-col gap-9 bg-aquamarine-200 text-black p-14 rounded-xl relative">
-                        <img className="absolute -left-16 -top-16 w-32" src="./src/assets/images/profile.webp" alt="" />
+                    <div className="max-w-3xl flex flex-col gap-9 bg-aquamarine-200 text-black p-14 rounded-xl relative">
+                        <img className="absolute hidden md:block -left-16 -top-16 w-32" src="./src/assets/images/profile.webp" alt="" />
                         <p>
                             “My experience working with the UXperience agency has been truly exceptional. From initial design through development and implementation, the UXperience team demonstrated a consistent commitment to excellence and innovation."
                         </p>

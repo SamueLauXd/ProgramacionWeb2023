@@ -13,7 +13,7 @@ export function Projects() {
                 <h1 className="font-raleway font-bold text-6xl text-aquamarine-100">Our Projects</h1>
                 <p className="font-lato text-white">Take a look of the projects we have been part of.</p>
             </div>
-            <section className="text-white">
+            <section className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
                 Aqui van las cosas cuando alejo funcione
             </section>
             <Footer />

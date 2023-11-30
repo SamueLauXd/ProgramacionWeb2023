@@ -11,7 +11,7 @@ export function AddProjectPage() {
             <HeaderDashboard />
             <main className="px-20 py-10">
                 <p className="font-lato text-white text-lg p-4 cursor-pointer" onClick={previousPage}>Go back</p>
-               <AddForm/>
+                <AddForm/>
             </main>
         </>
     )
