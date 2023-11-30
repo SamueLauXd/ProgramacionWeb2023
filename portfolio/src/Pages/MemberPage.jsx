@@ -2,14 +2,22 @@ import { useEffect } from "react";
 import { Footer, Nav } from "../Components";
 import { ProjectCard } from "../Components/ProjectCard";
 import { useLocation } from "react-router-dom";
+import { useProjects } from "../projects/hooks/useProjects";
 
 export function MemberPage() {
     useEffect((() => {
         window.scrollTo(0, 0)
+        console.log(filteredProjects);
     }), [])
+
+    const {projects} = useProjects()
 
     const {state} = useLocation()
     const {name, description, role, img} = state
+
+    const filterKey = name.split(' ').slice(0, 1)[0].toLowerCase()
+
+    const filteredProjects = projects.filter(project => project.author === filterKey)
 
     return (
         <>
@@ -22,6 +30,7 @@ export function MemberPage() {
                     <div>
                         <h2 className="font-lato font-semibold text-aquamarine-100 text-xl">More about</h2>
                         <h1 className="font-raleway font-bold text-white text-7xl w-min">{name}</h1>
+                        <p className="text-white">{role}</p>
                     </div>
                 </section>
                 <section className="grid grid-cols-2 mt-32">
@@ -29,10 +38,10 @@ export function MemberPage() {
                     <p className="font-lato font-light text-white">{description}</p>
                 </section>
                 <h3 className="font-raleway font-bold w-[95%] text-white text-3xl mt-40 mb-10 text-center"><span className="text-aquamarine-100">My</span> Projects</h3>
-                <section className="mb-20 flex flex-wrap gap-20 justify-center">
-                    <ProjectCard />
-                </section>
             </main>
+                <section className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-10 px-9'>
+                    <ProjectCard projects={filteredProjects} />
+                </section>
             <Footer />
         </>
     )

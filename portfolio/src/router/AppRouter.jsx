@@ -33,10 +33,10 @@ export function AppRouter() {
                 path="/login"
                 element={<LoginPage />} />
             <Route
-                path="/member:id"
+                path="/member/:id"
                 element={<MemberPage />} />
             <Route
-                path="/detail"
+                path="/detail/:name"
                 element={<ProjectDetailPage />} />
             <Route
                 path="/dashboard"

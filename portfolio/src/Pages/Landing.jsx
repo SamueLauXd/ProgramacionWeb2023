@@ -6,9 +6,14 @@ import { Link } from "react-router-dom"
 import { MemberCard } from "../Components/MemberCard"
 import { Button } from "../Components/Button"
 import { SecondaryButton } from "../Components/SecondaryButton"
+import { useProjects } from "../projects/hooks/useProjects"
 
 
 export function Landing () {
+
+    const {projects} = useProjects()
+    const lessProjects = projects.slice(0,3)
+
     return (
         <>
             <Nav/>
@@ -58,11 +63,13 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section className="flex flex-wrap gap-10 mt-20 items-center">
-                    <ProjectCard/>
+                <section className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-10">
+                    <ProjectCard projects={lessProjects}/>
                     <div className="rounded-xl flex flex-col items-start gap-2 justify-center h-min p-20">
                         <h1 className="font-raleway font-medium text-white text-3xl">More to come</h1>
-                        <SecondaryButton>See all</SecondaryButton>
+                        <Link to='/projects'>
+                            <SecondaryButton>See all</SecondaryButton>
+                        </Link>
                     </div>
                 </section>
 
