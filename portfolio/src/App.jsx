@@ -3,7 +3,7 @@ import { Landing, About, Services, Contact, MemberPage, ProjectDetailPage } from
 import { LoginPage } from "./auth/pages/LoginPage"
 import { DashboardPage } from "./user/pages/DashboardPage"
 import { PrivateRoute } from "./user/routes/PrivateRoute"
-import { AddProjectPage } from "./user/pages/AddProjectPage"
+import { Projects } from "./Pages/Projects"
 
 function App() {
 
@@ -18,6 +18,9 @@ function App() {
       <Route
         path="/services"
         element={<Services />} />
+        <Route 
+        path="/projects" 
+        element={<Projects />} />
       <Route
         path="/contact"
         element={<Contact />} />
