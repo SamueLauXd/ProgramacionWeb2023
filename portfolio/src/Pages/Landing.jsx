@@ -66,10 +66,6 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section>
-                    <img className="w-11/12 mt-32" src="./src/assets/images/jum.webp" alt="" />
-                </section>
-
                 <section className="flex flex-col flex-wrap gap-12 mt-24">
                     <MemberCard/> 
 
@@ -84,7 +80,7 @@ export function Landing () {
                 <section className="mt-32 flex flex-col items-center gap-20">
                     <div className="text-white">
                         <p className="font-lato">TESTIMONIALS</p>
-                        <h2 className="font-raleway font-bold text-4xl">What out clients say <span className="text-aquamarine-100">about us</span></h2>
+                        <h2 className="font-raleway font-bold text-4xl">What our clients say <span className="text-aquamarine-100">about us</span></h2>
                     </div>
                     <div className="w-6/12 flex flex-col gap-9 bg-aquamarine-200 text-black p-14 rounded-xl relative">
                         <img className="absolute -left-16 -top-16 w-32" src="./src/assets/images/profile.webp" alt="" />
