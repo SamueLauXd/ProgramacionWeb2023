@@ -1,6 +1,13 @@
+import { Navigate } from "react-router-dom";
 import { LoginForm } from "../components/LoginForm";
+import { useAuth } from "../hooks/useAuth";
 
 export function LoginPage() {
+    const { user } = useAuth()
+
+    if (user) {
+        return <Navigate to='/dashboard' />
+    }
 
     return (
         <main className="grid grid-cols-2 px-20 py-20 h-[100vh]">
