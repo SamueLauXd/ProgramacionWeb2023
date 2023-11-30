@@ -1,7 +1,6 @@
 export { About } from './About'
 export { Contact } from './Contact'
 export { Landing } from './Landing'
-export { Login } from './Login'
 export { Services } from './Services'
 export { MemberPage } from './MemberPage'
 export { ProjectDetailPage } from './ProjectDetailPage'
