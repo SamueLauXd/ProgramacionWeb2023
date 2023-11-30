@@ -15,7 +15,7 @@ export function Landing () {
             <main className="px-20 py-10 mt-20">
             <img src="./src/assets/images/bg-landing-1.webp" className="absolute top-0 right-0 -z-10"/>
                 <div className="h-96">
-                    <section className="flex flex-col rounded-2xl px-14 py-9 w-8/12 gap-10 backdrop-blur-md border border-solid border-white border-opacity-10">
+                    <section className="flex flex-col rounded-2xl px-14 py-9 w-full gap-10 backdrop-blur-md border border-solid border-white border-opacity-10 lg:w-8/12">
                         <p className="text-aquamarine-100 text-x font-raleway">UXPERIENCE</p>
                         <h1 className="font-medium font-raleway text-white text-5xl">TRANSFORMING IDEAS INTO <span className="text-aquamarine-100">UNIQUE EXPERIENCES</span></h1>
                         <Link to="/contact">
@@ -24,8 +24,8 @@ export function Landing () {
                     </section>
                 </div>
 
-                <section className="flex items-center gap-40 text-white">
-                    <img className="mt-36" loading="lazy" src="./src/assets/icons/landing-bg.svg"/>
+                <section className="flex items-center gap-40 text-white mt-36">
+                    <img className="hidden lg:block" loading="lazy" src="./src/assets/icons/landing-bg.svg"/>
                     <div className="flex flex-col gap-6">
                         <div>
                             <p className="text-lg text-aquamarine-200">About Us</p>
@@ -47,41 +47,8 @@ export function Landing () {
                     <p className="text-lg font-lato font-light text-white">Unique experiences that physically and emotionally engage the general public.</p>
                 </section>
 
-                <section className="flex justify-center gap-16 mt-20 flex-wrap">
-                    <ServiceCard icon={<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-vector-bezier" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 14m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
-                    <path d="M17 14m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
-                    <path d="M10 6m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
-                    <path d="M10 8.5a6 6 0 0 0 -5 5.5" />
-                    <path d="M14 8.5a6 6 0 0 1 5 5.5" />
-                    <path d="M10 8l-6 0" />
-                    <path d="M20 8l-6 0" />
-                    <path d="M3 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                    <path d="M21 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                    </svg>
-                    }
-                    title='UI & UX Design'
-                    text='UI and UX Design to achieve an impressive look and feel of your apps, webs, among others'/>
-
-                    <ServiceCard icon={<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-source-code" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M14.5 4h2.5a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-5" />
-                    <path d="M6 5l-2 2l2 2" />
-                    <path d="M10 9l2 -2l-2 -2" />
-                    </svg>
-                    }
-                    title='Web Design & Development'
-                    text='Responsive web design and development to boost your online presence'/>
-
-                    <ServiceCard icon={<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-layout-bottombar" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                    <path d="M4 15l16 0" />
-                    </svg>
-                    }
-                    title='Brand design & strategy'
-                    text='Brand design and strategy to boost your business and be recognize by the audience'/>
+                <section className="flex justify-center items-center gap-16 mt-20 flex-wrap">
+                    <ServiceCard/>
                 </section>
 
                 <section className="w-full flex justify-end mt-32">
@@ -99,38 +66,21 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section>
-                    <img className="w-11/12 mt-32" src="./src/assets/images/jum.webp" alt="" />
-                </section>
-
                 <section className="flex flex-col flex-wrap gap-12 mt-24">
-                    <MemberCard name="Alejandro Solarte" 
-                    subtitle="Developer" text="Passionate developer who likes to always keep learning about the new technologies."
-                    img="./src/assets/images/alejo.webp"
-                    /> 
+                    <MemberCard/> 
 
                     <div className="flex justify-between">
                         <div className="w-4/12 flex flex-col justify-center">
                             <p className="font-raleway text-aquamarine-100">MEET OUR TEAM</p>
                             <h2 className="font-raleway font-medim text-4xl text-white"><span className="text-aquamarine-100">GREAT</span> PEOPLE BEHIND UXPERIENCE</h2>
                         </div>
-
-                        <MemberCard name="Samuel Ortiz" 
-                        subtitle="Developer - UI Designer" text="Developer who likes to always keep learning about the new technologies."
-                        img="./src/assets/images/samu.webp"
-                        /> 
                     </div>
-
-                    <MemberCard name="Isabela Cortes" 
-                    subtitle="UI Designer" text="Great marketer and Designer who puts 100% in all her work."
-                    img="./src/assets/images/isa.webp"
-                    /> 
                 </section>
 
                 <section className="mt-32 flex flex-col items-center gap-20">
                     <div className="text-white">
                         <p className="font-lato">TESTIMONIALS</p>
-                        <h2 className="font-raleway font-bold text-4xl">What out clients say <span className="text-aquamarine-100">about us</span></h2>
+                        <h2 className="font-raleway font-bold text-4xl">What our clients say <span className="text-aquamarine-100">about us</span></h2>
                     </div>
                     <div className="w-6/12 flex flex-col gap-9 bg-aquamarine-200 text-black p-14 rounded-xl relative">
                         <img className="absolute -left-16 -top-16 w-32" src="./src/assets/images/profile.webp" alt="" />
