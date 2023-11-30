@@ -3,9 +3,10 @@ export const services = [
         id: 'web-option',
         service: 'Web Design & Development',
         inputLabel: 'Web Design', 
-        value: 'web-design',
+        value: 'web',
         description: 'Responsive web design and development to boost your online presence',
         img: '/src/assets/icons/webDesignIcon.svg',
+        banner: "./src/assets/images/services-img-1.webp",
         includes: [
             'Responsive Web Design',
             'Web Development',
@@ -19,9 +20,10 @@ export const services = [
         id: 'ui-ux-option',
         service: 'UI / UX Design',
         inputLabel: 'UI/UX Design',
-        value: 'ui-ux',
+        value: 'ui/ux',
         description: 'UI and UX Design to achieve an impressive look and feel of your apps, webs, among others',
         img: '/src/assets/icons/uiDesign.svg',
+        banner: "./src/assets/images/ux-ui-service.webp",
         includes: [
             'Design Audit',
             'Interactive Design Prototyping',
@@ -35,16 +37,17 @@ export const services = [
         id: 'brand-option',
         service: 'Brand design and strategy',
         inputLabel: 'Brand and Marketing',
-        value: 'brand-marketing',
+        value: 'brand',
         description: 'Brand design and strategy to boost your business and be recognize by the audience',
-        img: '/src/assets/icons/brandIcon.svg',
+        img: './src/assets/icons/brandIcon.svg',
+        banner: "./src/assets/images/brand-service.webp", 
         includes: [
-            'Responsive Web Design',
-            'Web Development',
-            'UI / UX Design',
-            'Custom Web Design',
-            'Website Maintenance',
-            'Corporate Web Design'
+            'Market Research',
+            'Brand Identity Design',
+            'Visual Branding',
+            'Brand Positioning',
+            'Brand Strategy Consulting',
+            'Rebranding Services'
         ]
     },
 ]

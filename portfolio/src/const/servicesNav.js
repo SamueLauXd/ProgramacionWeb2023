@@ -2,16 +2,16 @@ export const servicesNav = [
     {
         id: 1,
         label: 'Web Design & Development',
-        selected: true
+        value: 'web'
     },
     {
         id: 2,
         label: 'UX/UI Design',
-        selected: false
+        value: 'ui/ux'
     },
     {
         id: 3,
         label: 'Brand design & strategy',
-        selected: false
+        value: 'brand'
     },
 ]
