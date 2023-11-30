@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom"
 import { Landing, About, Services, Contact, MemberPage, ProjectDetailPage } from './pages'
 import { LoginPage } from "./auth/pages/LoginPage"
+import { DashboardPage } from "./user/pages/DashboardPage"
+import { PrivateRoute } from "./user/routes/PrivateRoute"
 
 function App() {
 
@@ -13,6 +15,11 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/member" element={<MemberPage />} />
       <Route path="/detail" element={<ProjectDetailPage />} />
+      <Route path="/dashboard" element={
+        <PrivateRoute>
+          <DashboardPage />
+        </PrivateRoute>
+      } />
     </Routes>
   )
 }
