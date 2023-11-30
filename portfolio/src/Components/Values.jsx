@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export function Values ({title, text, number}) {
     return (
-        <div className="w-8/12 text-lg relative">
+        <div className="max-w-3xl text-lg relative">
             <h3 className="font-bold text-2xl ml-14 text-transparent">
                 {title}
             </h3>

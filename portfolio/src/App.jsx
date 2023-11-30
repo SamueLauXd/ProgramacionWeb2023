@@ -4,6 +4,7 @@ import { LoginPage } from "./auth/pages/LoginPage"
 import { DashboardPage } from "./user/pages/DashboardPage"
 import { PrivateRoute } from "./user/routes/PrivateRoute"
 import { Projects } from "./Pages/Projects"
+import { AddProjectPage } from "./user/pages/AddProjectPage"
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
         path="/login"
         element={<LoginPage />} />
       <Route
-        path="/member"
+        path="/member/:id"
         element={<MemberPage />} />
       <Route
         path="/detail"
@@ -44,7 +45,7 @@ function App() {
         path="/dashboard/add"
         element={
           <PrivateRoute>
-            <AddProjectPage />
+            <AddProjectPage/>
           </PrivateRoute>
         } />
     </Routes>
