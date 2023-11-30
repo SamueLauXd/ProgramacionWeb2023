@@ -9,19 +9,44 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/member/:name" element={<MemberPage />} />
-      <Route path="/detail" element={<ProjectDetailPage />} />
-      <Route path="/dashboard" element={
-        <PrivateRoute>
-          <DashboardPage />
-        </PrivateRoute>
-      } />
+      <Route
+        path="/"
+        element={<Landing />} />
+      <Route
+        path="/about"
+        element={<About />} />
+      <Route
+        path="/services"
+        element={<Services />} />
+        <Route 
+        path="/projects" 
+        element={<Projects />} />
+      <Route
+        path="/contact"
+        element={<Contact />} />
+      <Route
+        path="/login"
+        element={<LoginPage />} />
+      <Route
+        path="/member"
+        element={<MemberPage />} />
+      <Route
+        path="/detail"
+        element={<ProjectDetailPage />} />
+      <Route
+        path="/dashboard"
+        element={
+          <PrivateRoute>
+            <DashboardPage />
+          </PrivateRoute>
+        } />
+        <Route
+        path="/dashboard/add"
+        element={
+          <PrivateRoute>
+            <AddProjectPage />
+          </PrivateRoute>
+        } />
     </Routes>
   )
 }

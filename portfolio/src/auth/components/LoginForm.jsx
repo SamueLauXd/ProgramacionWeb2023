@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { useForm } from "../hooks/useForm"
 
 export function LoginForm() {
@@ -36,7 +37,12 @@ export function LoginForm() {
                         onChange={handleInputChange}
                         required />
                 </div>
+                <fieldset className="flex flex-col gap-4">
                 <button className="bg-aquamarine-100 py-2 font-lato font-medium rounded-lg" type="submit">Sign In</button>
+                <Link to='/' className="border border-aquamarine-100 py-2 font-lato font-medium rounded-lg text-center text-white">
+                    Return home
+                </Link>
+                </fieldset>
             </fieldset>
         </form>
     )
