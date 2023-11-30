@@ -6,7 +6,7 @@ export function Contact() {
     return (
         <>
             <Nav />
-            <main className="grid grid-cols-2 px-12">
+            <main className="grid grid-cols-2 px-12 mt-20">
                 <section className="flex flex-col gap-8">
                     <h1 className="mb-4 text-4xl text-white w-3/4 font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Let’s discuss on something <span className="text-aquamarine-100">cool</span> together</h1>
                     <ContactOptions />
@@ -39,11 +39,11 @@ function ContactForm() {
         <form className="flex flex-col justify-between bg-white rounded-lg py-6 px-8" id="contact-form">
             <fieldset className="flex flex-col gap-4 mb-16">
                 <h6>I’m interested in...</h6>
-                <ul className=" flex flex-wrap w-5/6 justify-start gap-4 ">
+                <ul className=" flex flex-wrap w-5/6 justify-start gap-4">
                     {
                         services.map(({ id, inputLabel, value }) => {
                             return (
-                                <li className="w-min">
+                                <li className="w-min" key={id}>
                                     <input type="checkbox" id={id} value={value} className="hidden peer" required="" />
                                     <label htmlFor={id} className="inline-flex items-center opacity-50 justify-between w-max px-5 py-2.5 text-gray-500 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer dark:hover:text-aquamarine-200 dark:border-gray-700 peer-checked:border-aquamarine-200 peer-checked:opacity-100 peer-checked:bg-aquamarine-200 hover:text-gray-600 dark:peer-checked:text-white peer-checked:text-white hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                         {inputLabel}
