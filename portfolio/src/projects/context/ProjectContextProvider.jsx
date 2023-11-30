@@ -7,6 +7,7 @@ export function ProjectContextProvider({ children }) {
     const [projects, setProjects] = useState([])
 
     const getProjects = async () => {
+
         const q = query(collection(db, "projects"));
         const updatedProjects = []
         onSnapshot(q, (querySnapshot) => {
