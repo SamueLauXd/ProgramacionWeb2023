@@ -119,7 +119,7 @@ export function AddForm() {
 
             <button type="submit"
                 className="bg-aquamarine-100 inline-flex items-center justify-center py-2 rounded-xl gap-2 w-3/4 m-auto"
-            >Submit project <img src="../src/assets/icons/add-project.svg" alt="" /></button>
+            >Submit project <img src="/add-project.svg" alt="" /></button>
         </form>
     )
 }

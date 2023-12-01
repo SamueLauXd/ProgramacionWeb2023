@@ -18,13 +18,14 @@ export function DashboardPage() {
                 </Link>
                 <ul className="flex items-center justify-between w-11/12">
                     <li className={liStyle}>Web Design</li>
-                    <l className={liStyle}i>UX / UI</l>
+                    <l className={liStyle} i>UX / UI</l>
                     <li className={liStyle}>Brand</li>
                 </ul>
-                <section className="p-9 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-10">
-                    <ProjectCard projects={projects}/>
-                </section>
             </main>
+
+            <section className="p-9 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-10">
+                <ProjectCard projects={projects} />
+            </section>
         </>
     )
 }
