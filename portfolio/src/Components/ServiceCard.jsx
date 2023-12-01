@@ -8,7 +8,6 @@ export function ServiceCard () {
         {
             services.map(thing => {
                 const {service, img, description, id } = thing
-                console.log(img);
                 return (
                     <div key={id} className="flex flex-col gap-9 items-center justify-between text-center w-80 h-[400px] px-10 py-5 rounded-2xl border border-solid border-aquamarine-100 border-opacity-40">
                         <div className="grid place-items-center p-3 bg-aquamarine-200 rounded-full">

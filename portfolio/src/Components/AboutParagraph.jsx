@@ -10,7 +10,7 @@ export function AboutParagraph ({order, title, text, image}) {
                         {text}
                     </p>
             </div>
-            <img loading="lazy" src={`./src/assets/images/about-${image}.webp`} alt="" className="w-5/12 hidden lg:block"/>
+            <img loading="lazy" src={`about-${image}.webp`} alt="" className="w-5/12 hidden lg:block"/>
         </div>
     )
 }

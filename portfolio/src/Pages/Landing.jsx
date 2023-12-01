@@ -18,7 +18,7 @@ export function Landing () {
         <>
             <Nav/>
             <main className="px-20 py-10">
-            <img src="./src/assets/images/bg-landing-1.webp" className="absolute top-0 right-0 -z-10 hidden md:block"/>
+            <img src="bg-landing-1.webp" className="absolute top-0 right-0 -z-10 hidden md:block"/>
                 <div className="h-96">
                     <section className="flex flex-col rounded-2xl px-1 md:px-14 py-9 w-full border-none gap-10 backdrop-blur-md border md:border-solid border-white border-opacity-10 lg:w-8/12">
                         <p className="text-aquamarine-100 font-raleway">UXPERIENCE</p>
@@ -30,7 +30,7 @@ export function Landing () {
                 </div>
 
                 <section className="flex items-center gap-40 text-white mt-10 md:mt-20">
-                    <img className="hidden lg:block" loading="lazy" src="./src/assets/icons/landing-bg.svg"/>
+                    <img className="hidden lg:block" loading="lazy" src="landing-bg.svg"/>
                     <div className="flex flex-col gap-6">
                         <div>
                             <p className="text-lg text-aquamarine-200">About Us</p>
@@ -88,7 +88,7 @@ export function Landing () {
                         <h2 className="font-raleway font-bold text-4xl">What our clients say <span className="text-aquamarine-100">about us</span></h2>
                     </div>
                     <div className="max-w-3xl flex flex-col gap-9 bg-aquamarine-200 text-black p-14 rounded-xl relative">
-                        <img className="absolute hidden md:block -left-16 -top-16 w-32" src="./src/assets/images/profile.webp" alt="" />
+                        <img className="absolute hidden md:block -left-16 -top-16 w-32" src="profile.webp" alt="" />
                         <p>
                             “My experience working with the UXperience agency has been truly exceptional. From initial design through development and implementation, the UXperience team demonstrated a consistent commitment to excellence and innovation."
                         </p>
@@ -99,7 +99,7 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section className="bg-landing-banner text-white px-10 py-44 flex flex-col gap-10 mt-32 rounded-3xl">
+                <section className="bg-landing-banner.webp text-white px-10 py-44 flex flex-col gap-10 mt-32 rounded-3xl">
                     <div className="flex flex-col gap-4">
                         <h1 className="font-raleway text-4xl">Do you have any <span className="text-aquamarine-100">questions</span>?</h1>
                         <p>Feel free to send us your questions or request a free consultation.</p>

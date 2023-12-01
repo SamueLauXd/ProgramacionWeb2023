@@ -2,8 +2,11 @@ import { Link } from "react-router-dom"
 import { AddButton } from "../components/AddButton"
 import { HeaderDashboard } from "../components/HeaderDashboard"
 import { useState } from "react"
+import { useProjects } from "../../projects/hooks/useProjects"
+import { ProjectCard } from "../../Components/ProjectCard"
 
 export function DashboardPage() {
+    const { projects } = useProjects()
     const liStyle = "font-raleway font-regular text-white text-3xl"
     return (
         <>
@@ -15,12 +18,11 @@ export function DashboardPage() {
                 </Link>
                 <ul className="flex items-center justify-between w-11/12">
                     <li className={liStyle}>Web Design</li>
-                    <li>UX / UI</li>
-                    <li>Brand</li>
+                    <l className={liStyle}i>UX / UI</l>
+                    <li className={liStyle}>Brand</li>
                 </ul>
-                <section>
-                    <article>Proyecto 1</article>
-                    <article>Proyecto 2</article>
+                <section className="p-9 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-10">
+                    <ProjectCard projects={projects}/>
                 </section>
             </main>
         </>

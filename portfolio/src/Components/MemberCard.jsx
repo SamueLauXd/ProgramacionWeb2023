@@ -16,10 +16,10 @@ export function MemberCard () {
                                 <p>{role}</p>
                             </div>
                             <nav className="flex gap-6">
-                                <img src="./src/assets/icons/twitter.svg" alt="" />
-                                <img src="./src/assets/icons/linkedin.svg" alt="" />
-                                <img src="./src/assets/icons/instagram.svg" alt="" />
-                                <img src="./src/assets/icons/behance.svg" alt="" />
+                                <img src="twitter.svg" alt="" />
+                                <img src="linkedin.svg" alt="" />
+                                <img src="instagram.svg" alt="" />
+                                <img src="behance.svg" alt="" />
                             </nav>
                             <div className="grid place-items-center pb-6">
                                 <Link to={`/member/${id}`} state={member}>

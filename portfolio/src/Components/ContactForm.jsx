@@ -57,7 +57,7 @@ export function ContactForm() {
 
             <button type="submit"
                 className="w-max flex flex-row items-center justify-center gap-1 text-white bg-aquamarine-200 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl text-sm px-5 py-2.5 mr-2 mt-12 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                <img src="./src/assets/icons/send-icon.svg" alt="Send Message Icon" aria-hidden="true" />
+                <img src="send-icon.svg" alt="Send Message Icon" aria-hidden="true" />
                 Send Message
             </button>
         </form>

@@ -13,7 +13,7 @@ export function About () {
     return (
         <>
         <Nav/>
-        <img src="./src/assets/images/bg-image-1.webp" className="absolute top-0 right-0 -z-10"/>
+        <img src="bg-image-1.webp" className="absolute top-0 right-0 -z-10"/>
         <main className="flex flex-col px-20 gap-36 text-white">
             <section className="flex flex-col mt-20">
                 <div className="flex flex-col text-5xl md:text-8xl">

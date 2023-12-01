@@ -5,8 +5,8 @@ export const services = [
         inputLabel: 'Web Design', 
         value: 'web',
         description: 'Responsive web design and development to boost your online presence',
-        img: '/src/assets/icons/webDesignIcon.svg',
-        banner: "./src/assets/images/services-img-1.webp",
+        img: 'webDesignIcon.svg',
+        banner: "services-img-1.webp",
         includes: [
             'Responsive Web Design',
             'Web Development',
@@ -22,8 +22,8 @@ export const services = [
         inputLabel: 'UI/UX Design',
         value: 'ui/ux',
         description: 'UI and UX Design to achieve an impressive look and feel of your apps, webs, among others',
-        img: '/src/assets/icons/uiDesign.svg',
-        banner: "./src/assets/images/ux-ui-service.webp",
+        img: 'uiDesign.svg',
+        banner: "ux-ui-service.webp",
         includes: [
             'Design Audit',
             'Interactive Design Prototyping',
@@ -39,8 +39,8 @@ export const services = [
         inputLabel: 'Brand and Marketing',
         value: 'brand',
         description: 'Brand design and strategy to boost your business and be recognize by the audience',
-        img: './src/assets/icons/brandIcon.svg',
-        banner: "./src/assets/images/brand-service.webp", 
+        img: 'brandIcon.svg',
+        banner: "brand-service.webp", 
         includes: [
             'Market Research',
             'Brand Identity Design',
