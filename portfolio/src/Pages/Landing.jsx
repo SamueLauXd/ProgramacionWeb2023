@@ -99,7 +99,7 @@ export function Landing () {
                     </div>
                 </section>
 
-                <section className="bg-landing-banner.webp text-white px-10 py-44 flex flex-col gap-10 mt-32 rounded-3xl">
+                <section className="bg-landing-banner text-white px-10 py-44 flex flex-col gap-10 mt-32 rounded-3xl">
                     <div className="flex flex-col gap-4">
                         <h1 className="font-raleway text-4xl">Do you have any <span className="text-aquamarine-100">questions</span>?</h1>
                         <p>Feel free to send us your questions or request a free consultation.</p>

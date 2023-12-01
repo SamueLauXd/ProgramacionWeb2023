@@ -23,6 +23,10 @@ export default {
       'raleway': ['Raleway', 'sans-serif'],
       'lato': ['Lato', 'sans-serif']
     },
+    backgroundImage: {
+      'services-banner': "url(/bg-services-1.webp)",
+      'landing-banner' : "url(/landing-banner.webp)",
+    }
   },
   plugins: [],
 }
