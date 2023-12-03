@@ -12,7 +12,7 @@ export function ProjectCard({projects}) {
                     const background = `flex flex-col justify-end rounded-xl gap-5`;
                     return (
                         <div key={title} className={background}>
-                            <img src={cardImg} alt="" loading="lazy" className="h-[300px] object-cover rounded-lg"/>
+                            <img src={cardImg} alt="" loading="lazy" className="w-[150px] md:h-[300px] object-cover rounded-lg"/>
                             <div className="flex flex-col bg-dark-blue bg-opacity-70 text-white py-6 gap-4" loading="lazy">
                                 <div className="mb-3">
                                     <h2 className="font-raleway font-bold text-2xl">{title}</h2>
