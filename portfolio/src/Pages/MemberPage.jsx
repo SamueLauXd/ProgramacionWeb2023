@@ -23,13 +23,13 @@ export function MemberPage() {
         <>
             <Nav />
             <main className="px-20 mt-10">
-                <section className="flex flex-row items-center justify-around gap-42">
+                <section className="flex flex-row-reverse items-start md:flex-row md:items-center justify-around gap-42">
                     <img src={img}
                         alt={`${name} image`}
                         className="w-1/4" />
                     <div>
                         <h2 className="font-lato font-semibold text-aquamarine-100 text-xl">More about</h2>
-                        <h1 className="font-raleway font-bold text-white text-7xl w-min">{name}</h1>
+                        <h1 className="font-raleway font-bold text-white text-3xl md:text-7xl w-min">{name}</h1>
                         <p className="text-white">{role}</p>
                     </div>
                 </section>

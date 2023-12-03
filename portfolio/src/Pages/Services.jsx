@@ -34,7 +34,9 @@ export function Services() {
                             <span>Have an idea?</span>
                             <span className="text-aquamarine-100">Let’s bring it to life</span>
                         </div>
-                        <SecondaryButton>Learn more</SecondaryButton>
+                        <Link to='/contact'>
+                            <SecondaryButton>Learn more</SecondaryButton>
+                        </Link>
                     </h3>
                 </section>
             </main>

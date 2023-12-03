@@ -24,7 +24,9 @@ export function ServicesCarousel({ filter }) {
                                     }
                                 </ul>
                                 <div className="m-auto lg:m-0">
-                                    <SecondaryButton>Learn more</SecondaryButton>
+                                    <Link to='/contact'>
+                                        <SecondaryButton>Learn more</SecondaryButton>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
