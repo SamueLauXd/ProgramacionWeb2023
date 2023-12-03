@@ -23,21 +23,21 @@ export function MemberPage() {
         <>
             <Nav />
             <main className="px-20 mt-10">
-                <section className="flex flex-row-reverse items-start md:flex-row md:items-center justify-around gap-42">
+                <section className="flex flex-col sm:flex-row items-center justify-around gap-42">
                     <img src={img}
                         alt={`${name} image`}
-                        className="w-1/4" />
+                        className="sm:w-1/4 w-22" />
                     <div>
                         <h2 className="font-lato font-semibold text-aquamarine-100 text-xl">More about</h2>
                         <h1 className="font-raleway font-bold text-white text-3xl md:text-7xl w-min">{name}</h1>
                         <p className="text-white">{role}</p>
                     </div>
                 </section>
-                <section className="grid grid-cols-2 mt-32">
-                    <h3 className="font-raleway font-bold w-3/4 text-white text-3xl border-r"><span className="text-aquamarine-100">My</span> Biography</h3>
+                <section className="flex flex-col gap-4 md:grid md:grid-cols-2  mt-16 md:mt-32 mb-20">
+                    <h3 className="font-raleway font-bold w-3/4 text-white text-3xl md:border-r"><span className="text-aquamarine-100">My</span> Biography</h3>
                     <p className="font-lato font-light text-white">{description}</p>
                 </section>
-                <h3 className="font-raleway font-bold w-[95%] text-white text-3xl mt-40 mb-10 text-center"><span className="text-aquamarine-100">My</span> Projects</h3>
+                <h3 className="font-raleway font-bold w-[95%] text-white text-3xl md:mt-40 md:mb-10 text-center"><span className="text-aquamarine-100">My</span> Projects</h3>
             </main>
                 <section className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-10 px-9'>
                     <ProjectCard projects={filteredProjects} />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { services } from "../const/services"
 import { SecondaryButton } from "./SecondaryButton"
 
@@ -25,7 +26,7 @@ export function ServicesCarousel({ filter }) {
                                 </ul>
                                 <div className="m-auto lg:m-0">
                                     <Link to='/contact'>
-                                        <SecondaryButton>Learn more</SecondaryButton>
+                                        <SecondaryButton>I'm interested</SecondaryButton>
                                     </Link>
                                 </div>
                             </div>

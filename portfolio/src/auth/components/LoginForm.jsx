@@ -10,9 +10,9 @@ export function LoginForm() {
     return (
         <form 
         onSubmit={handleSubmit}
-        className="flex flex-col bg-[#1e2435] items-center justify-center border border-aquamarine-100 rounded-lg gap-12">
-            <h5 className="font-raleway text-white font-bold text-xl text-center">Hello! <br /> Log in to enter the administrator panel</h5>
-            <fieldset className="flex flex-col gap-12 w-1/2">
+        className="flex flex-col bg-[#1e2435] items-center justify-center py-6 border border-aquamarine-100 rounded-lg gap-12">
+            <h5 className="font-raleway text-white font-bold text-lg md:text-xl text-center w-3/4 md:w-full">Hello! <br /> Log in to enter the administrator panel</h5>
+            <fieldset className="flex flex-col gap-12 w-10/12 md:w-3/4">
                 <div>
                     <label htmlFor="email" className="font-lato block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                     <input
