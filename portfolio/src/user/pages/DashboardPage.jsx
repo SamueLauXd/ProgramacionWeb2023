@@ -3,7 +3,7 @@ import { AddButton } from "../components/AddButton"
 import { HeaderDashboard } from "../components/HeaderDashboard"
 import { useState } from "react"
 import { useProjects } from "../../projects/hooks/useProjects"
-import { ProjectCard } from "../../Components/ProjectCard"
+import { ProjectCard } from "../../components/ProjectCard"
 
 export function DashboardPage() {
     const { projects } = useProjects()

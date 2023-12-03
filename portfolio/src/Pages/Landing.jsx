@@ -1,11 +1,11 @@
-import { Nav } from "../Components/Nav"
-import { Footer } from "../Components/Footer"
-import { ServiceCard } from "../Components/ServiceCard"
-import { ProjectCard } from "../Components/ProjectCard"
+import { Nav } from "../components/Nav"
+import { Footer } from "../components/Footer"
+import { ServiceCard } from "../components/ServiceCard"
+import { ProjectCard } from "../components/ProjectCard"
 import { Link } from "react-router-dom"
-import { MemberCard } from "../Components/MemberCard"
-import { Button } from "../Components/Button"
-import { SecondaryButton } from "../Components/SecondaryButton"
+import { MemberCard } from "../components/MemberCard"
+import { Button } from "../components/Button"
+import { SecondaryButton } from "../components/SecondaryButton"
 import { useProjects } from "../projects/hooks/useProjects"
 
 
